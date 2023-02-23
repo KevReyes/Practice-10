@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="w7.css">
+    <script src="w7.js"></script>
+</head>
+<body>
+	<td><img src="Cox-Logo.png" width="3840px" height="2160px">
+	<p>Sign up for a FREE IPHONE!!</p>
+	<p><span style="color:#FC0505;">Totally not a scam =)</span>
+    <!-- This is the form, It does not go anywhere to keep things simple. -->
+    <form>
+    <!-- First Name -->
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    
+    <!-- Last Name -->
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <!--The email-->
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    <!-- SSN -->
+    <label for="age">SSN</label><br>
+    <input type="text" id="age" name="age"><br>
+
+    <!--Submition Button-->
+    <button type="button" onclick="processFrom()">Submit Form</button>
+    </form>
+
+    <!-- This div is initially hidden. It will show the user info after it is submited-->
+<div id="userInfo">
+    <label for="firstName"> First Name:</label> <div id="firstName"></div>
+    <label for="lastName"> Last Name:</label> <div id="lastName"></div>
+    <label for="theEmail"> Email:</label> <div id="theEmail"></div>
+    <label for="theAge"> SSN:</label> <div id="theAge"></div>
+</div>
+
+
+</div>
+</body>
+</html>
